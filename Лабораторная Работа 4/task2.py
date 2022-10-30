@@ -2,14 +2,9 @@ def get_count_char(str_):
     ...  # TODO посчитать количество каждой буквы в строке в аргументе str_
     str_ = str_.lower().split()
     str_ = "".join(str_)
-    str_ = str_.split('.')
-    str_ = "".join(str_)
-    str_ = str_.split(', ')
-    str_ = "".join(str_)
-    str_ = str_.split('!')
-    str_ = "".join(str_)
-    str_ = str_.split(',')
-    str_ = "".join(str_)
+    for i in range(0, len(str_)):
+        if str_.isalpha==False:
+            str_.replace(str_[i], "")
     c = dict()
     str_.lower().strip('.')
     for letter in str_.lower():
