@@ -7,7 +7,7 @@ def get_count_char(str_):
             str_.replace(str_[i], "")
     c = dict()
     str_.lower().strip('.')
-    for letter in str_.lower():
+    for letter in str_:
         c[letter] = c.get(letter, 0) + 1
     return c
 
